@@ -2,7 +2,7 @@ stages:
   train_model:
     cmd: python src/train.py
     deps:
-    - data/Iris.csv
+    - data/dataset.csv
     - src/train.py
     outs:
     - models/metrics.txt
