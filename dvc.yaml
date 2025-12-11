@@ -1,0 +1,9 @@
+stages:
+  train_model:
+    cmd: python src/train.py
+    deps:
+    - data/Iris.csv
+    - src/train.py
+    outs:
+    - models/metrics.txt
+    - models/model.pkl
